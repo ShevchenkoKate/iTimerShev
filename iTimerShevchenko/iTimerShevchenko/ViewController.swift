@@ -30,13 +30,7 @@ class ViewController: UIViewController {
         buttonStart.isHidden = false
         buttonPause.isHidden = true
     }
-
-    @IBAction func buttonLapAction(_ sender: Any) {
-        let timerLap1 = timerCount.TableViewCell(at: index) as! TableViewCell
-        
-    }
-    
-    // Сейчас таймер считает только секуны на след паре подумать как сделать минуты!!!
+    // Сейчас таймер считает только секуны 
     
     @objc func timerUpdate() {
         let elapsed = -(self.timer.userInfo as! NSDate).timeIntervalSinceNow
